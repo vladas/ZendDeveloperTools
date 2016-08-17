@@ -23,7 +23,7 @@ class SerializableException implements \Serializable
      *
      * @param \Exception $exception
      */
-    public function __construct(\Exception $exception)
+    public function __construct(\Throwable $exception)
     {
         $this->data = [
             'code'     => $exception->getCode(),
